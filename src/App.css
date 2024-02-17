@@ -1,0 +1,20 @@
+.container {
+  max-width: 100%;
+}
+
+#shape {
+  clip-path: polygon(0 0, 0% 100%, 75% 100%);
+}
+#circle::before {
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #9a4e3d;
+}
+::-webkit-scrollbar-thumb {
+  background: #2f2d31;
+  border-radius: 50px !important;
+}
