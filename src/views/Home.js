@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { Helmet } from "react-helmet";
 
 function Home() {
   // onclick handle
@@ -15,6 +16,9 @@ function Home() {
       id="home"
       className="relative h-full flex justify-center items-center"
     >
+      <Helmet>
+        <title>Salah Eldin | Home </title>
+      </Helmet>
       {/* shape */}
       <div
         id="shape"

@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import Loading from "../components/Loading";
+import { Helmet } from "react-helmet";
 
 // lazy import
 const NoProjects = lazy(() => import("../components/NoProjects"));
@@ -7,6 +8,9 @@ const NoProjects = lazy(() => import("../components/NoProjects"));
 export default function Blog() {
   return (
     <section id="blog" className="py-10 h-full overflow-y-scroll">
+      <Helmet>
+        <title>Salah Eldin | Blog</title>
+      </Helmet>
       {/* page title */}
       <div
         id="page-title"
