@@ -1,7 +1,9 @@
 import React, { Suspense, lazy, useState } from "react";
 import { portfolioData } from "../Data";
 import Loading from "../components/Loading";
+import { Helmet } from "react-helmet";
 
+// lazy import
 const Projects = lazy(() => import("../components/Projects"));
 const NoProjects = lazy(() => import("../components/NoProjects"));
 
@@ -42,7 +44,13 @@ export default function ProtofiloSec() {
   });
 
   return (
-    <section id="portfolio" className="py-10 h-full overflow-y-scroll">
+    <section
+      id="portfolio"
+      className="py-10 xs:pb-20 lg:m-0 h-full overflow-y-scroll"
+    >
+      <Helmet>
+        <title>Salah Eldin | Portfolio</title>
+      </Helmet>
       {/* page title */}
       <div
         id="page-title"
@@ -85,7 +93,7 @@ export default function ProtofiloSec() {
             {filterItems.length >= 1 ? (
               <Projects animtaion={animtaion} filterItems={filterItems} />
             ) : (
-              <NoProjects />
+              <NoProjects name="projects" />
             )}
           </Suspense>
         </div>

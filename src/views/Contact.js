@@ -11,6 +11,7 @@ import { IoIosSend } from "react-icons/io";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
   return (
@@ -18,6 +19,9 @@ export default function Contact() {
       id="contact-me"
       className="flex items-center flex-col py-10 overflow-y-scroll h-full relative"
     >
+      <Helmet>
+        <title>Salah Eldin | Contact Me</title>
+      </Helmet>
       {/* page title */}
       <div
         id="page-title"

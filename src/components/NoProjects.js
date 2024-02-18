@@ -1,7 +1,7 @@
 import React from "react";
 import noProject from "../assets/no-project.svg";
 
-export default function NoProjects() {
+export default function NoProjects({ name }) {
   return (
     <div
       id="no-projects-yet"
@@ -13,10 +13,10 @@ export default function NoProjects() {
         xs:text-2xl 
         md:text-3xl"
       >
-        No projects yet ...
+        No {name} yet ...
       </h4>
       <h5 className=" text-center md:text-lg">
-        I'm doing my best to make more projects
+        I'm doing my best to make more {name}
       </h5>
     </div>
   );

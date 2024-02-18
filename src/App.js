@@ -8,7 +8,7 @@ import { wait } from "@testing-library/user-event/dist/utils";
 // lazy import
 const Home = lazy(() => wait(800).then(() => import("./views/Home")));
 const About = lazy(() => wait(800).then(() => import("./views/About")));
-const BLOG = lazy(() => wait(800).then(() => import("./views/Blog")));
+const Blog = lazy(() => wait(800).then(() => import("./views/Blog")));
 const Contact = lazy(() => wait(800).then(() => import("./views/Contact")));
 const Protofilo = lazy(() =>
   wait(800).then(() => import("./views/ProtofiloSec"))
@@ -22,11 +22,11 @@ function App() {
         <Switcher />
         <Suspense fallback={<Switcher />}>
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="blog" element={<BLOG />} />
-            <Route path="contact" element={<Contact />} />
             <Route path="portfolio" element={<Protofilo />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="blog" element={<Blog />} />
           </Routes>
         </Suspense>
       </div>

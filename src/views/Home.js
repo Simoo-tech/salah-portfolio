@@ -24,7 +24,7 @@ function Home() {
       />
       {/* container */}
       <div
-        className="container relative flex justify-center text-white text  flex-col gap-5
+        className="container relative flex justify-center text-white text flex-col gap-5
       xs:items-center xs:w-full
       lg:items-start lg:w-8/12"
       >
