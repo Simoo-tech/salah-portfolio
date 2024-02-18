@@ -77,7 +77,7 @@ export default function Contact() {
             <FaPhoneSquareAlt size={35} className="text-color3" />
             <a href="tel:+201116648153" aria-label="mail-me">
               <p className=" uppercase text-gray-300">call me</p>
-              <p>school12p@gmail.com</p>
+              <p>+201116648153</p>
             </a>
           </div>
           <div className="social flex gap-4 mt-2">
