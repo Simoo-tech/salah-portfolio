@@ -1,6 +1,6 @@
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { personalInfo } from "../../Data";
-import cv from "../../assets/Salah.pdf";
+import cv from "../../assets/Salah -Cv's.pdf";
 
 export const PersonalInfo = () => {
   const lists = personalInfo.map((list, i) => {
