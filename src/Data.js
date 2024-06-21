@@ -4,8 +4,10 @@ import { IoMdMailOpen } from "react-icons/io";
 import { BsChatQuoteFill } from "react-icons/bs";
 import proImg1 from "./assets/portfolioImgs/1.webp";
 import proImg2 from "./assets/portfolioImgs/2.webp";
+import proImg3 from "./assets/portfolioImgs/3.webp";
 import proLogo1 from "./assets/portfolioImgs/logo1.webp";
 import proLogo2 from "./assets/portfolioImgs/logo2.webp";
+import proLogo3 from "./assets/portfolioImgs/main-logo.webp";
 import cer1 from "./assets/cert/computer-network-fundamentals.webp";
 import cer2 from "./assets/cert/introduction-network.webp";
 import cer3 from "./assets/cert/Erhical-hacking.webp";
@@ -45,6 +47,7 @@ export const skills = [
   { name: "SEO", percent: "70" },
   { name: "UI/UX", percent: "75" },
   { name: "Photoshop", percent: "95" },
+  { name: "express", percent: "95" },
 ];
 
 export const pages = [
@@ -83,7 +86,9 @@ export const portfolioData = [
     proImg: proImg1,
     logoImg: proLogo1,
     bgColor: "#d9b694",
+    urlColor: "#647d68",
     type: "website",
+    url: "https://www.magnifyportal.com/",
   },
   {
     name: "GBA Think Tank",
@@ -92,7 +97,20 @@ export const portfolioData = [
     proImg: proImg2,
     logoImg: proLogo2,
     bgColor: "#0c243c",
+    urlColor: "#ffffff",
     type: "website",
+    url: "https://gbathink.org/",
+  },
+  {
+    name: "ilinks",
+    des: "website for building a portfolio by geting some data from client ",
+    langs: ["reactjs", "tailwindCss", "nodejs", "express", "mongoDB"],
+    proImg: proImg3,
+    logoImg: proLogo3,
+    bgColor: "#ffffff",
+    urlColor: "#cd5c4e",
+    type: "website",
+    url: "https://ilink.onrender.com/",
   },
 ];
 
